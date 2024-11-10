@@ -1,0 +1,463 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar .brand-logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.navbar .brand-name {
+    color: white;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.auth-buttons a:hover {
+    background-color: #0056b3;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.brand-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons .register-btn {
+    background-color: #f44336;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: url('images1/nature.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+
+.welcome-text h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-right: 66px;
+}
+
+.welcome-text h2 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.book-now-btn {
+    padding: 10px 30px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.book-now-btn:hover {
+    background-color: #005f73;
+}
+
+/* Row Section with Image and Form */
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px; /* Ensures minimum width */
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column form input,
+.form-column form select,
+.form-column form textarea {
+    margin-bottom: 1em;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.form-column form button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-column form button:hover {
+    background-color: #005f73;
+}
+
+/* Package Gallery Section */
+.package-gallery {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.package-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.package-card {
+    flex: 0 1 30%; /* Flex basis with shrink */
+    background-color: #f4f4f4;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 1em; /* Added margin for spacing */
+}
+
+.package-card img {
+    width: 100%;
+    height: auto;
+}
+
+.package-card h3 {
+    margin: 1em 0 0.5em;
+}
+
+.package-card p {
+    margin-bottom: 0.5em;
+}
+
+.package-card button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.package-card button:hover {
+    background-color: #005f73;
+}
+
+/* Services Section */
+.services {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    flex: 0 1 30%; /* Flex basis with shrink */
+    background-color: #f4f4f4;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .welcome-text h1 {
+        font-size: 2.5em;
+    }
+
+    .welcome-text h2 {
+        font-size: 3em;
+    }
+
+    .package-card,
+    .service {
+        flex: 0 1 100%; /* Full width on small screens */
+    }
+}
+/* Gallery Section */
+.gallery {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    width: 23%;
+    margin: 1%;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.gallery-card img:hover {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+/* About Us Section */
+.about-us {
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-info {
+    padding: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content span {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+}
+.column-about-image{
+    height: 9rem;
+    width: auto;
+    margin-right: 10px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandName</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images1/travel2.png" alt="Brand Logo" class="brand-logo">
+            <span class="brand-name">TravelYo</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book</a></li>
+            <li class="dropdown">
+                <a href="#">Packages</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">United States</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">France</a></li>
+                    <li><a href="#">Germany</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="register.html" class="btn btn-primary">Register</a>
+            <a href="login.html" class="btn btn-success">Login</a>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h1>Welcome to TravelYo</h1>
+            <h2>Visit <span id="country-name">India</span></h2>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="form-section">
+        <div class="row">
+            <div class="column image-column">
+                <img src="images1/passport.jpg" alt="Brand Image" class="brand-image">
+            </div>
+            <div class="column form-column">
+                <h2>Book Your Trip</h2>
+                <form id="booking-form">
+                    <label for="destination">Where to:</label>
+                    <select id="destination">
+                        <option value="United States">United States</option>
+                        <option value="India">India</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+
+                    <label for="persons">How Many Persons:</label>
+                    <input type="number" id="persons" min="1" required>
+
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" required>
+
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" required>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" rows="5" minlength="50" maxlength="500" required></textarea>
+
+                    <button type="button" onclick="validateForm()">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Gallery Section -->
+    <section class="package-gallery">
+        <h2>Package Gallery</h2>
+        <div class="package-row">
+            <div class="package-card">
+                <img src="images1/us-statue.jpg" alt="Package 1">
+                <h3>United States</h3>
+                <p>Attractions: Statue of Liberty, Grand Canyon</p>
+                <p>Price: $1500</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="images1/tajmahal.jpg" alt="Package 2">
+                <h3>India</h3>
+                <p>Attractions: Taj Mahal, Kerala Backwaters</p>
+                <p>Price: $1200</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="images1/paris.jpg" alt="Package 3">
+                <h3>France</h3>
+                <p>Attractions: Eiffel Tower, Louvre Museum</p>
+                <p>Price: $1800</p>
+                <p>Rating: ★★★★★</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service">Affordable Hotels</div>
+            <div class="service">Food & Drinks</div>
+            <div class="service">Safety Guide</div>
+            <div class="service">Flight Booking</div>
+            <div class="service">Custom Itinerary</div>
+            <div class="service">Travel Insurance</div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-row">
+            <div class="gallery-card">
+                <img src="images1/jordan.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-card">
+                <img src="images1/mountains.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-card">
+                <img src="images1/nature2.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-card">
+                <img src="images1/sunset.jpg" alt="Gallery Image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="row">
+            <div>
+                <img src="images1/travel2.png" class="column-about-image" alt="About Us Image">
+            </div>
+            <div class="column about-info">
+                <h2>About Us</h2>
+                <p>Established in 2010, TravelYo aims to provide the best travel experiences. Our team is dedicated to making your journey memorable with custom itineraries and unparalleled service.</p>
+                <p>Whether it's adventure, relaxation, or exploration, we have something for everyone. Join us as we discover the beauty of the world, one destination at a time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <span>TravelYo</span>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><img src="images1/fb.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="images1/insta.jfif" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="images1/x.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <p>© 2024 TravelYo. All Rights Reserved.</p>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
